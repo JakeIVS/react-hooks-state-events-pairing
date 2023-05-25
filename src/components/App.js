@@ -4,17 +4,14 @@ import VideoPlayer from "./VideoPlayer.js";
 import VideoDetails from "./VideoDetails.js";
 import Comments from "./Comments";
 
+
 function App() {
   console.log("Here's your data:", video);
   const [commentsHidden, setCommentsHidden] = useState(false)
-
   function handleHideComments() {
     setCommentsHidden(!commentsHidden)
   }
-
   let comments = commentsHidden ? null :  <Comments comments={video.comments} />
-
-
   return (
     <div className="App">
       <VideoPlayer url={video.embedUrl}/>
@@ -30,20 +27,19 @@ function App() {
     </div>
   );
 }
-
 export default App;
 
 
 
-
-// App
-// |_VideoDetails
-// |  |_VideoInfo
-// |  |_Buttons
-// |
-// |_Comments
-// .   |_CommentCard
-
+/*
+App
+|_VideoDetails
+|  |_VideoInfo
+|  |_Buttons
+|
+|_Comments
+.   |_CommentCard
+*/
 
 
 

@@ -1,5 +1,6 @@
 import Buttons from "./Buttons";
 
+
 function VideoDetails({ title, views, createdAt, upvotes, downvotes, onHideComments, commentsHidden }) {
     return (
         <div className="video-details" >
@@ -9,5 +10,4 @@ function VideoDetails({ title, views, createdAt, upvotes, downvotes, onHideComme
         </div>
     )
 }
-
 export default VideoDetails
